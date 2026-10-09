@@ -119,6 +119,12 @@ public class PaintSurface extends JComponent {
      * які ми додали раніше. Саме для цього і був створений список shapes.
      * Якби його не було, то постаті фігури зникали б при кожному перемальовуванні.
      */
+
+    public void clearShapes() {
+        shapes.clear(); 
+        repaint();      
+    }
+    
     public void paint(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
 
